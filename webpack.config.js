@@ -1,4 +1,6 @@
+const ExtractTextPlugin = require("extract-text-webpack-plugin");
 module.exports = {
+    plugins: [new ExtractTextPlugin("index.css")],
     entry: __dirname + "/app/app.js",
     output:{
        path: __dirname,

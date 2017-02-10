@@ -1,6 +1,6 @@
 import React,{ Component } from "react";
 import { render } from "react-dom";
-
+import List from "../component/list"
 
 class Index extends Component{
   constructor(props) {
@@ -9,7 +9,7 @@ class Index extends Component{
   render(){
     return(
       <div>
-          <div>{"我是列表"}</div>
+          <List />
           <div>{"我是内容"}</div>
       </div>
     )
